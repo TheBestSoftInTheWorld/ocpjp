@@ -10,7 +10,13 @@ public class App {
 		//taks2();	
 		//taks3();
 		//task4();
-		task5();
+		//task5();
+		try {
+			task6();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	
 	public static void taks1() {
@@ -41,4 +47,9 @@ public class App {
 	//b = b+7;
 	System.out.println(b);
 	}
+	
+	public static void task6() throws Exception {
+		SuperClass sb = new SubClass();
+		sb.doIt("hello", 3);
+		}
 }
