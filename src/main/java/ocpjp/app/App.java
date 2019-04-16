@@ -1,7 +1,6 @@
 package ocpjp.app;
 
 import java.io.File;
-import java.io.IOException;
 
 /**
  * Hello world!
@@ -22,8 +21,9 @@ public class App {
 		// task8();
 
 		// task9();
-		//task10();
-		task11();
+		// task10();
+		// task11();
+		task12();
 	}
 
 	public static void taks1() {
@@ -100,9 +100,21 @@ public class App {
 		};
 		a1.printValue();
 	}
+
 	public static void task11() {
 		Q22 a = new Q22();
 		Q22.A1 a1 = a.new A1();
-		 a1.printValue();
+		a1.printValue();
+	}
+
+	public static void task12() {
+		Q23B b = new Q23B();
+		Q23C c = new Q23C();
+		//newPrint(b);
+		//newPrint(c);
+	}
+
+	public static void newPrint(Q23 a) {
+		a.printValue();
 	}
 }
