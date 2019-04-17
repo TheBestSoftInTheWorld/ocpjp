@@ -29,6 +29,7 @@ public class App {
 		//task15();
 		//task16();
 		//task17();
+		task18();
 	}
 
 	public static void taks1() {
@@ -142,5 +143,13 @@ public class App {
 	}
 	public static void task17() {
 		new Q2B().print();
+	}
+	
+	public static void task18() {
+		Q31A b = new Q31B();
+		Q31B b1 = new Q31B();
+		b1.test2();
+		((Q31B)b).test2();
+
 	}
 }
