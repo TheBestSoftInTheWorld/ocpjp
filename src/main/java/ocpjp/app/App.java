@@ -23,7 +23,12 @@ public class App {
 		// task9();
 		// task10();
 		// task11();
-		task12();
+		// task12();
+		// task13();
+		//task14();
+		//task15();
+		//task16();
+		//task17();
 	}
 
 	public static void taks1() {
@@ -110,11 +115,32 @@ public class App {
 	public static void task12() {
 		Q23B b = new Q23B();
 		Q23C c = new Q23C();
-		//newPrint(b);
-		//newPrint(c);
+		newPrint(b);
+		newPrint(c);
 	}
 
 	public static void newPrint(Q23 a) {
 		a.printValue();
+	}
+
+	public static void task13() {
+		Q25A a = new Q25B();
+		a.getOBJ();
+	}
+
+	public static void task14() {
+		Q26B b = new Q26B();
+		b.printName();
+	}
+	
+	public static void task15() {
+		new Q28B(5);
+	}
+	
+	public static void task16() {
+		new Q1B();
+	}
+	public static void task17() {
+		new Q2B().print();
 	}
 }
