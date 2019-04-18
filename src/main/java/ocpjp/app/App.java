@@ -47,7 +47,7 @@ public class App {
 		// task25();
 		// task26();
 		// task27();
-		//task28();
+		// task28();
 		task29();
 	}
 
@@ -297,6 +297,19 @@ public class App {
 	}
 
 	public static void task29() {
+		Q46A a = new Q46A();
+		a.start();
+
+		synchronized (a) {
+			System.out.println("waiting");
+			try {
+				a.wait();
+			} catch (InterruptedException e) {
+
+			}
+			System.out.println(a.count);
+		}
 
 	}
+
 }
