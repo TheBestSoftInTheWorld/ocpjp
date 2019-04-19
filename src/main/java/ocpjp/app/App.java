@@ -7,6 +7,12 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Set;
+import java.util.TreeSet;
+
+import javax.swing.text.html.HTMLDocument.Iterator;
 
 /**
  * Hello world!
@@ -48,7 +54,10 @@ public class App {
 		// task26();
 		// task27();
 		// task28();
-		task29();
+		// task29();
+		// task30();
+		// task31();
+		task32();
 	}
 
 	public static void taks1() {
@@ -312,4 +321,42 @@ public class App {
 
 	}
 
+	public static void task30() {
+		Queue q = new LinkedList();
+		q.add("newyork");
+		q.add("ca");
+		q.add("texas");
+		show(q);
+
+	}
+
+	public static void show(Queue q) {
+		q.add(new Integer(11));
+		while (!q.isEmpty())
+			System.out.print(q.poll() + " ");
+	}
+
+	public static void task31() {
+		TreeSet s1 = new TreeSet();
+		s1.add("one");
+		s1.add("two");
+		s1.add("three");
+		s1.add("one");
+		java.util.Iterator it = s1.iterator();
+		while (it.hasNext()) {
+			System.out.print(it.next() + " ");
+		}
+	}
+
+	public static void task32() {
+		Set s = new TreeSet();
+		s.add("7");
+		s.add(9+"");
+		java.util.Iterator itr = s.iterator();
+
+		while (itr.hasNext()) {
+
+			System.out.print(itr.next() + " ");
+		}
+	}
 }
