@@ -11,6 +11,8 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Set;
 import java.util.TreeSet;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * Hello world!
@@ -58,7 +60,8 @@ public class App {
 		// task32();
 		// task33();
 		// task34();
-		task35();
+		//task35();
+		task36();
 	}
 
 	public static void taks1() {
@@ -387,5 +390,24 @@ public class App {
 		Integer i = 20;
 		String str = (i < 21) ? "jan" : (i < 56) ? "feb" : "march";
 		System.out.println(str);
+	}
+	
+	public static void task36() {
+		Pattern p = Pattern.compile("a+b?c*");
+		Matcher m = p.matcher("ab");
+		boolean b = m.matches();
+		System.out.println(b);
+		Matcher m2 = p.matcher("ac");
+		boolean b2 = m2.matches();
+		System.out.println(b2);
+		Matcher m3 = p.matcher("acc");
+		boolean b3 = m3.matches();
+		System.out.println(b3);
+		Matcher m4 = p.matcher("acb");
+		boolean b4 = m3.matches();
+		System.out.println(b4);
+		Matcher m5 = p.matcher("abc");
+		boolean b5 = m5.matches();
+		System.out.println(b5);
 	}
 }
