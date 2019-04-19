@@ -12,8 +12,6 @@ import java.util.Queue;
 import java.util.Set;
 import java.util.TreeSet;
 
-import javax.swing.text.html.HTMLDocument.Iterator;
-
 /**
  * Hello world!
  *
@@ -57,7 +55,10 @@ public class App {
 		// task29();
 		// task30();
 		// task31();
-		task32();
+		// task32();
+		// task33();
+		// task34();
+		task35();
 	}
 
 	public static void taks1() {
@@ -351,12 +352,40 @@ public class App {
 	public static void task32() {
 		Set s = new TreeSet();
 		s.add("7");
-		s.add(9+"");
+		s.add(9 + "");
 		java.util.Iterator itr = s.iterator();
 
 		while (itr.hasNext()) {
 
 			System.out.print(itr.next() + " ");
 		}
+	}
+
+	public static void task33() {
+		TreeSet s1 = new TreeSet();
+		s1.add("one");
+		s1.add("two");
+		s1.add("three");
+		s1.add("one1");
+		s1.add("one");
+		java.util.Iterator it = s1.iterator();
+		while (it.hasNext()) {
+			System.out.print(it.next() + " ");
+		}
+
+	}
+
+	public static void task34() {
+		int i = 5;
+		System.out.println(i++);
+		System.out.println(i);
+		System.out.println(++i);
+		System.out.println(++i + i++);
+	}
+
+	public static void task35() {
+		Integer i = 20;
+		String str = (i < 21) ? "jan" : (i < 56) ? "feb" : "march";
+		System.out.println(str);
 	}
 }
