@@ -19,7 +19,7 @@ import java.util.regex.Pattern;
  *
  */
 public class App {
-
+	
 	public static void main(String[] args) {
 
 		// taks1();
@@ -61,7 +61,8 @@ public class App {
 		// task33();
 		// task34();
 		//task35();
-		task36();
+		//task36();
+		task37();
 	}
 
 	public static void taks1() {
@@ -409,5 +410,10 @@ public class App {
 		Matcher m5 = p.matcher("abc");
 		boolean b5 = m5.matches();
 		System.out.println(b5);
+	}
+	
+	public static void task37() {
+		byte i = 127;
+		System.out.println(i);
 	}
 }
